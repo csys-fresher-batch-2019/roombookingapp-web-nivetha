@@ -30,6 +30,6 @@ public class Bookingservlet extends HttpServlet {
 		//System.out.println("check_in");
 		u.setCheckOut(java.sql.Date.valueOf(request.getParameter("check_out")));
 		u.insertfacilityroom(u);
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("booked.jsp");
 	}
 	}
