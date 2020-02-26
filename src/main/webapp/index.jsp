@@ -1,3 +1,4 @@
+
 <html>
 <body background="images/homepage.jpg">
 <title>Online Room Booking</title>

@@ -14,7 +14,7 @@
 <form action="registerservlet">
 <br/>
 <br/>
-Enter UserName:<input type="text" name="userName" pattern="^[a-zA-Z]+$"  required/>
+Enter UserName:<input type="text" name="userName"   required/>
 <br/>
 <br/>
 Enter MoblieNo:<input type="tel" name="mobNo" maxlength="10" pattern="\d{10}" title="Enter 10 digit" required/>

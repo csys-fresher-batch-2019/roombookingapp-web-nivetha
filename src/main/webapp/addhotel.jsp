@@ -19,13 +19,13 @@ Add HotelId:<input type="text" name="hotel_id"  required/>
 Add HotelName:<input type="text" name="hotel_name" required/>
 <br/>
 <br/>
-Add Location:<input type="text" name="location" pattern="^[a-zA-Z]+$"  required/>
+Add Location:<input type="text" name="location"  required/>
 <br/>
 <br/>
 Add Rating:<input type="float" name="rating" required/>
 <br/>
 <br/>
-Add Status:<input type="text" name="status" pattern="^[a-zA-Z]+$" required/>
+Add Status:<input type="text" name="status"  required/>
 <br/>
 <br/>
 Add RoomType:<input type="text" name="RoomType" required/>
