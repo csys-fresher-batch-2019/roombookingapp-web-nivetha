@@ -1,101 +1,12 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  
-  <servlet>
-  	<servlet-name>registerservlet</servlet-name>
-  	<display-name>registerservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.registerservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>Loginservlet</servlet-name>
-  	<display-name>Loginservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.Loginservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>Adminservlet</servlet-name>
-  	<display-name>Adminservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.Adminservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AddHotelservlet</servlet-name>
-  	<display-name>AddHotelservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.AddHotelservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>Bookingservlet</servlet-name>
-  	<display-name>Bookingservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.Bookingservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>UpdatePasswordservlet</servlet-name>
-  	<display-name>UpdatePasswordservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.UpdatePasswordservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>UpdatePaymentservlet</servlet-name>
-  	<display-name>UpdatePaymentservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.UpdatePaymentservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>ViewHotelDetailsservlet</servlet-name>
-  	<display-name>ViewHotelDetailsservlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.ViewHotelDetailsservlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>UpdateAvaliablesevlet</servlet-name>
-  	<display-name>UpdateAvaliablesevlet</display-name>
-  	<description></description>
-  	<servlet-class>com.onlineroom.UpdateAvaliablesevlet</servlet-class>
-  </servlet>
-  
- 
-  <servlet-mapping>
-  	<servlet-name>registerservlet</servlet-name>
-  	<url-pattern>/registerservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Loginservlet</servlet-name>
-  	<url-pattern>/Loginservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Adminservlet</servlet-name>
-  	<url-pattern>/Adminservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AddHotelservlet</servlet-name>
-  	<url-pattern>/AddHotelservlet</url-pattern>
-  </servlet-mapping>
- 
-  <servlet-mapping>
-  	<servlet-name>Bookingservlet</servlet-name>
-  	<url-pattern>/Bookingservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UpdatePasswordservlet</servlet-name>
-  	<url-pattern>/UpdatePasswordservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UpdatePaymentservlet</servlet-name>
-  	<url-pattern>/UpdatePaymentservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ViewHotelDetailsservlet</servlet-name>
-  	<url-pattern>/ViewHotelDetailsservlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UpdateAvaliablesevlet</servlet-name>
-  	<url-pattern>/UpdateAvaliablesevlet</url-pattern>
-  </servlet-mapping>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID">
+	<display-name>onlineroombookingapp-web</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
 </web-app>
