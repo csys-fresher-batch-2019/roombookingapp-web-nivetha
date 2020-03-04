@@ -10,12 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 import com.nive.hotelroom.dao.AdminDAO;
 import com.nive.hotelroom.factory.DAOFactory;
 
-
-@SuppressWarnings("serial")
 @WebServlet("/Adminservlet")
 public class Adminservlet extends HttpServlet {
        
     
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 		AdminDAO c=DAOFactory.getAdminDAO();

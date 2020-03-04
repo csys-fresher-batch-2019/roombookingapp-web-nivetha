@@ -8,21 +8,30 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.nive.hotelroom.dao.CustomerDAO;
+import com.nive.hotelroom.exception.DBException;
 import com.nive.hotelroom.factory.DAOFactory;
 
 /**
  * Servlet implementation class UpdatePasswordservlet
  */
-@SuppressWarnings("serial")
 @WebServlet("/UpdatePasswordservlet")
 public class UpdatePasswordservlet extends HttpServlet {   
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		String Email=request.getParameter("emailId");
 		String OldPassword=request.getParameter("passWord");
 		String NewPassword=request.getParameter("password");
 		CustomerDAO c=DAOFactory.getCustomerDAO();
-		c.changePassword(Email,OldPassword,NewPassword);
+		try {
+			c.changePassword(Email,OldPassword,NewPassword);
+		} catch (DBException e) {
+			e.printStackTrace();
+		}
 		response.sendRedirect("index.jsp");
 
 	}

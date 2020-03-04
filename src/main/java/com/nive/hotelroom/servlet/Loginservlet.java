@@ -1,24 +1,21 @@
 package com.nive.hotelroom.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import com.nive.hotelroom.dao.CustomerDAO;
-import com.nive.hotelroom.dao.impl.Logger;
 import com.nive.hotelroom.domain.CustomerDetails;
 import com.nive.hotelroom.factory.DAOFactory;
+import com.nive.hotelroom.util.Logger;
 
-@SuppressWarnings("serial")
 @WebServlet("/Loginservlet")
 public class Loginservlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 	private static Logger LOGGER = Logger.getInstance();
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CustomerDetails c=new CustomerDetails();
 		c.setEmailId(request.getParameter("emailId"));

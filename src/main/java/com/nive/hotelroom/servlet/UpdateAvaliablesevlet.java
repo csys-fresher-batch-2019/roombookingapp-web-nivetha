@@ -8,20 +8,30 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.nive.hotelroom.dao.HotelDAO;
+import com.nive.hotelroom.exception.DBException;
 import com.nive.hotelroom.factory.DAOFactory;
 
 /**
  * Servlet implementation class UpdateAvaliablesevlet
  */
-@SuppressWarnings("serial")
+
 @WebServlet("/UpdateAvaliablesevlet")
 public class UpdateAvaliablesevlet extends HttpServlet {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int id=Integer.parseInt(request.getParameter("hotelId"));
 		String status=request.getParameter("status");
 	   HotelDAO p=DAOFactory.getHotelDAO();
-		p.updatetable(id,status);
+		try {
+			p.updatetable(id,status);
+		} catch (DBException e) {
+			e.printStackTrace();
+		}
 		response.sendRedirect("Allhotel.jsp");
 	}
 
