@@ -24,7 +24,7 @@ public class Loginservlet extends HttpServlet {
 		PrintWriter out=response.getWriter();
 		try {
 			CustomerDAO d=DAOFactory.getCustomerDAO();
-			int uid=d.getUserId(c.getEmailId(),c.getPassword());
+			int uid=d.getUserId(c);
 			out.print(c);
 			if(uid !=0)
 			{
